@@ -1,19 +1,18 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FiChevronLeft } from "react-icons/fi";
-
-const SpeachTemplets = () => {
+const ProfProfiles = () => {
   return (
     <div>
       <Link className="link-def1" to="/">
         <FiChevronLeft />
       </Link>
-      <h3>Speach Templets</h3>
+      <h3>Profiles</h3>
       <p>
-        This page should have templates for what the professional will discuss
+        This page should have the profiels and credentials of the proffesionals
       </p>
     </div>
   );
 };
 
-export default SpeachTemplets;
+export default ProfProfiles;
