@@ -1,8 +1,8 @@
 .link-def1{
     background-color: white;
     color: blue;
-    border: 2px solid green;
     padding: 2px;
+    margin: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -22,7 +22,5 @@
   background:#ccddcc;  
 }
 .home-main-ptag p {
-  text-align:center;
   vertical-align: middle;
-  display: table-cell;   
 }
