@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-//searchicon
-import { FcNook } from "react-icons/fc";
+//speach icon
+import { GiNotebook } from "react-icons/gi";
 //profile icon
 import { IoAccessibilitySharp} from "react-icons/io5";
 //login icon
 import { IoLogInOutline } from "react-icons/io5";
+//user information icon
+import { MdOutlineSettingsSuggest} from "react-icons/md";
 
 const Home = () => {
   const [login, setLogin] = useState(false);
@@ -13,16 +15,23 @@ const Home = () => {
   return (
     <div>
       {!login ? (
-        <Link className="link-Login" to="/Login/Info">
+        <Link className="link-User-Info" to="/Login/Info">
+          <MdOutlineSettingsSuggest />
+        </Link>
+      ) : (
+        <p>Loged In</p>
+      )}
+
+      {!login ? (
+        <Link className="link-Login" to="/Login">
           <IoLogInOutline />
-          <p>Log In</p>
         </Link>
       ) : (
         <p>Loged In</p>
       )}
 
       <Link className="link-def1" to="/speachtempletes">
-        <FcNook />
+        <GiNotebook />
         <p>Speach Templets</p>
       </Link>
 

@@ -6,7 +6,8 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import SpeachTemplets from './pages/SpeachTemplets'
 import ProfProfiles from './pages/ProfProfiles'
-import UserLoginInfo from './pages/UserLoginInfo'
+import UserProfileInformation from './pages/UserProfileInformation'
+import Login from './pages/Login'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/speachtempletes" element={<SpeachTemplets/>}/>
       <Route path="/profprofiles" element={<ProfProfiles/>}/>
-      <Route path="/Login/Info" element={<UserLoginInfo/>}/>
+      <Route path="/Login" element={<Login/>}/>
+      <Route path="/Login/Info" element={<UserProfileInformation/>}/>
       </Routes>
 
     </div>

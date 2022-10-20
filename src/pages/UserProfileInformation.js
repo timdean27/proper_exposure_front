@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { FiChevronLeft } from "react-icons/fi";
 
-import LocationInformation from "../components/Login/LocationInformation"
-import About from "../components/Login/About"
+import LocationInformation from "../components/ProfileInformation/LocationInformation"
+import About from "../components/ProfileInformation/About"
 
-const UserLoginInfo = () => {
+const UserProfileInformation = () => {
   return (
     <div>
     <Link className="link-def1" to="/">
@@ -18,4 +18,4 @@ const UserLoginInfo = () => {
   )
 }
 
-export default UserLoginInfo
+export default UserProfileInformation
