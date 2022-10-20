@@ -26,8 +26,15 @@
 }
 
 .link-Login{
-    width: 70px;
+    width: 5vw;
+    position: absolute;
+    top: 1.12vh;
+    right: 6vw;
+}
+
+.link-User-Info{
+    width: 5vw;
     position: absolute;
     top: 1vh;
-    right: 0px;
+    right: 1vw;
 }
