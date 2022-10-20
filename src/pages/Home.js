@@ -1,17 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+//searchicon
 import { FcNook } from "react-icons/fc";
-import { FcApprove } from "react-icons/fc";
+//profile icon
+import { IoAccessibilitySharp} from "react-icons/io5";
+//login icon
+import { IoLogInOutline } from "react-icons/io5";
+
 const Home = () => {
+  const [login, setLogin] = useState(false);
+
   return (
     <div>
+      {!login ? (
+        <Link className="link-Login" to="/Login/Info">
+          <IoLogInOutline />
+          <p>Log In</p>
+        </Link>
+      ) : (
+        <p>Loged In</p>
+      )}
+
       <Link className="link-def1" to="/speachtempletes">
         <FcNook />
         <p>Speach Templets</p>
       </Link>
 
       <Link className="link-def1" to="/profprofiles">
-        <FcApprove />
+        <IoAccessibilitySharp/>
         <p>Profiles</p>
       </Link>
 
