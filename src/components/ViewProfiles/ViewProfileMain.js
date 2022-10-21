@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+
+
 const ViewProfileMain = ({SampleProfile}) => {
   
 
@@ -9,7 +11,7 @@ const ViewProfileMain = ({SampleProfile}) => {
       <div>
         {SampleProfile.map((profile, index) => (
           <div className="Single-Profile" key={index}>
-            <Link to={`/Login/Info/${profile.id}`}>
+            <Link to={`/profprofiles/${profile.id}`}>
               <div className="Single-Profile-Header">
                 <img
                   src={profile.profilePic}
@@ -19,6 +21,7 @@ const ViewProfileMain = ({SampleProfile}) => {
                 <p>{profile.firstName}</p>
                 <p>{profile.lastName}</p>
               </div>
+              
             </Link>
             <div className="Single-Profile-Body">
               <p>Occupation: {profile.occupation}</p>

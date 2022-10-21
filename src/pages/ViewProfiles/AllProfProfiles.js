@@ -3,35 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 
 import ViewProfileMain from "../../components/ViewProfiles/ViewProfileMain";
-import IndividualProfile from "../../components/ViewProfiles/IndividualProfile";
+
 
 import { FiChevronLeft } from "react-icons/fi";
 
 
 
-const AllProfProfiles = () => {
-  const SampleProfile = [
-    {
-      id:1,
-      profilePic: "ProfilePicHolder.jpg",
-      firstName: "Tim",
-      lastName: "Dean",
-      occupation: "Software Engineer",
-      yearsInField: 1,
-      SchoolCounty: "Suffolk",
-      SchoolsNear: ["Northport HS", "Commack HS"],
-    },
-    {
-      id:2,
-      profilePic: "ProfilePicHolder.jpg",
-      firstName: "Tom",
-      lastName: "Dean",
-      occupation: "Mechanical Engineer",
-      yearsInField: 1,
-      SchoolCounty: "Nassau",
-      SchoolsNear: ["Northport HS", "Commack HS"],
-    },
-  ];
+const AllProfProfiles = ({SampleProfile}) => {
+  
 
 
 
@@ -45,7 +24,9 @@ const AllProfProfiles = () => {
         This page should have the profiels and credentials of the proffesionals
       </p>
       <ViewProfileMain SampleProfile={SampleProfile}/>
-     <IndividualProfile SampleProfile={SampleProfile}/>
+      <Routes>
+      
+      </Routes>
     </div>
   );
 };
