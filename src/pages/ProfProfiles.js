@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+
+
+import ViewProfileMain from "../components/ViewProfiles/ViewProfileMain";
+
+
 import { FiChevronLeft } from "react-icons/fi";
+
+
+
 const ProfProfiles = () => {
   return (
     <div>
@@ -11,6 +19,7 @@ const ProfProfiles = () => {
       <p>
         This page should have the profiels and credentials of the proffesionals
       </p>
+      <ViewProfileMain/>
     </div>
   );
 };
