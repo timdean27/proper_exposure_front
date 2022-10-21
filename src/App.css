@@ -43,9 +43,32 @@
 /* Profile Page profProfiles*/
 .Single-Profile{
     border: 1px solid black;
+   margin-top: 1vh;
 }
 
 .Profile-Pic{
     max-width: 20vw;
     max-height: 20vh;
+}
+
+.Single-Profile-Header{
+    display:flex;
+    flex-direction: row;
+}
+.Single-Profile-Header p {
+    padding-top:2vh;
+    margin: 5px
+}
+.Single-Profile-Body{
+    display:flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    border: 1px solid red;
+}
+
+.Single-Profile-Body p{
+    margin: 1vw;
+}
+.Single-Profile-Body ul{
+    margin: 1vw;
 }
