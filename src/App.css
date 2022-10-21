@@ -38,3 +38,14 @@
     top: 1vh;
     right: 1vw;
 }
+
+
+/* Profile Page profProfiles*/
+.Single-Profile{
+    border: 1px solid black;
+}
+
+.Profile-Pic{
+    max-width: 20vw;
+    max-height: 20vh;
+}
