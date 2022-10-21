@@ -5,9 +5,10 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Home from './pages/Home'
 import SpeachTemplets from './pages/SpeachTemplets'
-import ProfProfiles from './pages/ProfProfiles'
-import UserProfileInformation from './pages/UserProfileInformation'
-import Login from './pages/Login'
+import AllProfProfiles from './pages/ViewProfiles/AllProfProfiles'
+import UserProfileInformation from './pages/LoginAndSettings/UserProfileInformation'
+import Login from './pages/LoginAndSettings/Login'
+import IndividualProfile from "./components/ViewProfiles/IndividualProfile";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/speachtempletes" element={<SpeachTemplets/>}/>
-      <Route path="/profprofiles" element={<ProfProfiles/>}/>
+      <Route path="/profprofiles" element={<AllProfProfiles/>}/>
       <Route path="/Login" element={<Login/>}/>
       <Route path="/Login/Info" element={<UserProfileInformation/>}/>
+      <Route path="/Login/Info/:id" element={<IndividualProfile/>}/>
       </Routes>
 
     </div>
