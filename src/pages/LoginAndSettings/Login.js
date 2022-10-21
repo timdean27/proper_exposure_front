@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { FiChevronLeft } from "react-icons/fi";
 
-import LoginComp from "../components/LoginComp/LoginComp";
+import LoginComp from "../../components/LoginComp/LoginComp";
 
 const Login = () => {
   return (
