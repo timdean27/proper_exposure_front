@@ -14,6 +14,18 @@
     color: white;
   }
 
+/* Header */
+
+.Header-Tag{
+    max-width:1128px;
+    margin:auto;
+    padding: 12px 0 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+}
 
 /* Home Page */
 
