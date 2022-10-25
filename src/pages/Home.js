@@ -14,6 +14,8 @@ const Home = () => {
 
   return (
     <div>
+    <div className="Login-corner-container">
+{/* settigns logo button*/}
       {!login ? (
         <Link className="link-User-Info" to="/Login/Info">
           <MdOutlineSettingsSuggest />
@@ -21,7 +23,7 @@ const Home = () => {
       ) : (
         <p>Loged In</p>
       )}
-
+{/* login logo button*/}
       {!login ? (
         <Link className="link-Login" to="/Login">
           <IoLogInOutline />
@@ -29,6 +31,7 @@ const Home = () => {
       ) : (
         <p>Loged In</p>
       )}
+    </div>
 
       <Link className="link-def1" to="/speachtempletes">
         <GiNotebook />
