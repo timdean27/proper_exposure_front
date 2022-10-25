@@ -10,6 +10,7 @@ const HomeRoute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      
     </div>
   );
 };

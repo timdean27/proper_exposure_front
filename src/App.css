@@ -37,20 +37,16 @@
   vertical-align: middle;
 }
 
-.link-Login{
-    width: 5vw;
-    position: absolute;
-    top: 1.12vh;
+.Login-corner-container{
+    max-width:20vw;
+    margin:auto;
+    display: flex;
     right: 6vw;
+    top: 3vh;
+    position: fixed;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
-
-.link-User-Info{
-    width: 5vw;
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-}
-
 
 /* Profile Page profProfiles*/
 .Single-Profile{
