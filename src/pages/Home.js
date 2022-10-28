@@ -32,16 +32,17 @@ const Home = () => {
         <p>Loged In</p>
       )}
     </div>
-
-      <Link className="link-def1" to="/speachtempletes">
+        <div className="Home-Nav-Container">
+      <Link className="nav-links-def1" to="/speachtempletes">
         <GiNotebook />
         <p>Speach Templets</p>
       </Link>
 
-      <Link className="link-def1" to="/profprofiles">
+      <Link className="nav-links-def1" to="/profprofiles">
         <IoAccessibilitySharp/>
         <p>Profiles</p>
       </Link>
+      </div>
 
       <div className="home-main-ptag">
         <p>
