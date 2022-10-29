@@ -32,7 +32,7 @@ const Home = () => {
         <p>Loged In</p>
       )}
     </div>
-        <div className="Home-Nav-Container">
+        <nav className="Home-Nav-Container">
       <Link className="nav-links-def1" to="/speachtempletes">
         <GiNotebook />
         <p>Speach Templets</p>
@@ -42,7 +42,7 @@ const Home = () => {
         <IoAccessibilitySharp/>
         <p>Profiles</p>
       </Link>
-      </div>
+      </nav>
 
       <div className="home-main-ptag">
         <p>

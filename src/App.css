@@ -28,13 +28,15 @@
 
   /* hover only works for desktop not phone */
   .nav-links-def1:hover{
-    background-color: rgba(143, 239, 157, 0.15);
+    background-color: #a8fbac98;
     color: #39863d;
   text-decoration: none;
   }
 
-/* Header */
 
+
+/* ///////////////////////////////////// */
+/* Header */
 .Header-Tag{
     max-width:1128px;
     margin:auto;
@@ -46,6 +48,8 @@
     flex-wrap: nowrap; 
 }
 
+
+/* ///////////////////////////////////// */
 /* Home Page */
 
 .home-main-ptag{
@@ -67,10 +71,13 @@
     justify-content: space-between;
 }
 
+
+/* ///////////////////////////////////// */
 /* Profile Page profProfiles*/
 .Single-Profile{
     border: 1px solid black;
    margin-top: 1vh;
+   
 }
 
 .Profile-Pic{
@@ -81,6 +88,7 @@
 .Single-Profile-Header{
     display:flex;
     flex-direction: row;
+    background-color: #f0fff0;
 }
 .Single-Profile-Header p {
     padding-top:2vh;
@@ -90,7 +98,8 @@
     display:flex;
     flex-direction: row;
     word-wrap: break-word;
-    border: 1px solid red;
+    border: 1px solid #39863d;
+    background-color: #ffffff;
 }
 
 .Single-Profile-Body p{
