@@ -1,21 +1,42 @@
-.link-def1{
-    background-color: white;
-    color: blue;
-    padding: 2px;
+.Home-Nav-Container{
+    display: flex;
+}
+
+.nav-links-def1{
+    box-shadow: inset 0 0 0 1px #48f75198;
+    color: #39863d;
+    border-radius: 24px;
+    transition-duration: 167ms;
+    padding: 5px 14px;
     margin: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    background-color: rgba(0,0,0,0);
+    width: 9vw;
+    height: 6vh
   }
+
+  @media (max-width: 768px){
+    .nav-links-def1{
+        font-size: 15px;
+        width: 12vw;
+        height: 10vh;
+        padding: 5px 12px;
+    }
+}
 
   /* hover only works for desktop not phone */
-  .link-def1:hover{
-    background-color: green;
-    color: white;
+  .nav-links-def1:hover{
+    background-color: #a8fbac98;
+    color: #39863d;
+  text-decoration: none;
   }
 
-/* Header */
 
+
+/* ///////////////////////////////////// */
+/* Header */
 .Header-Tag{
     max-width:1128px;
     margin:auto;
@@ -27,6 +48,8 @@
     flex-wrap: nowrap; 
 }
 
+
+/* ///////////////////////////////////// */
 /* Home Page */
 
 .home-main-ptag{
@@ -48,10 +71,13 @@
     justify-content: space-between;
 }
 
+
+/* ///////////////////////////////////// */
 /* Profile Page profProfiles*/
 .Single-Profile{
     border: 1px solid black;
    margin-top: 1vh;
+   
 }
 
 .Profile-Pic{
@@ -62,6 +88,7 @@
 .Single-Profile-Header{
     display:flex;
     flex-direction: row;
+    background-color: #f0fff0;
 }
 .Single-Profile-Header p {
     padding-top:2vh;
@@ -71,7 +98,8 @@
     display:flex;
     flex-direction: row;
     word-wrap: break-word;
-    border: 1px solid red;
+    border: 1px solid #39863d;
+    background-color: #ffffff;
 }
 
 .Single-Profile-Body p{
