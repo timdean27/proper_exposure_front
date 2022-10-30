@@ -9,7 +9,7 @@ import About from "../../components/ProfileInformation/About"
 const UserProfileInformation = () => {
   return (
     <div>
-    <Link className="link-def1" to="/">
+    <Link className="back-btn" to="/">
         <FiChevronLeft />
       </Link>
     <LocationInformation/>

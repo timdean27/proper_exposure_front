@@ -15,7 +15,7 @@ const IndividualProfile = ({ SampleProfile }) => {
   const loadedMarketing = () => {
     return (
       <div key={showProfile.id}>
-        <Link className="link-def1" to="/profprofiles">
+        <Link className="back-btn" to="/profprofiles">
           <FiChevronLeft />
         </Link>
 
