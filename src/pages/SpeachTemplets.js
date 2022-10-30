@@ -5,7 +5,8 @@ import { FiChevronLeft } from "react-icons/fi";
 const SpeachTemplets = () => {
   return (
     <div>
-      <Link className="link-def1" to="/">
+    
+      <Link className="back-btn" to="/">
         <FiChevronLeft />
       </Link>
       <h3>Speach Templets</h3>
