@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <div>
+
     <div className="Login-corner-container">
 {/* settigns logo button*/}
       {!login ? (

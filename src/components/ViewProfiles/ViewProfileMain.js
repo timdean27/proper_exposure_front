@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 const ViewProfileMain = ({SampleProfile}) => {
   
 
+
   const loadedData = () => {
     return (
       <div>
