@@ -9,7 +9,11 @@ import { IoLogInOutline } from "react-icons/io5";
 //user information icon
 import { MdOutlineSettingsSuggest} from "react-icons/md";
 
-const Home = () => {
+import HomePageProfs from "../components/HomePageProfs/HomePageProfs"
+
+
+
+const Home = ({SampleProfile}) => {
   const [login, setLogin] = useState(false);
 
   return (
@@ -55,6 +59,8 @@ const Home = () => {
         <p>What they do day to day?</p>
         <p>What steps they would take if they started over ext..</p>
       </div>
+      <div><HomePageProfs SampleProfile={SampleProfile}/></div>
+      
     </div>
   );
 };
