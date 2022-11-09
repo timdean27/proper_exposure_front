@@ -9,29 +9,8 @@ import { FiChevronLeft } from "react-icons/fi";
 
 
 
-const AllProfProfiles = () => {
-  const SampleProfile = [
-    {
-      id:1,
-      profilePic: "ProfilePicHolder.jpg",
-      firstName: "Tim",
-      lastName: "Dean",
-      occupation: "Software Engineer",
-      yearsInField: 1,
-      SchoolCounty: "Suffolk",
-      SchoolsNear: ["Northport HS", "Commack HS"],
-    },
-    {
-      id:2,
-      profilePic: "ProfilePicHolder.jpg",
-      firstName: "Tom",
-      lastName: "Dean",
-      occupation: "Mechanical Engineer",
-      yearsInField: 1,
-      SchoolCounty: "Nassau",
-      SchoolsNear: ["Northport HS", "Commack HS"],
-    },
-  ];
+const AllProfProfiles = ({SampleProfile}) => {
+ 
 
   return (
     <div>
