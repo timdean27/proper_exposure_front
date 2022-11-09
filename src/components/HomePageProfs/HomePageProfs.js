@@ -6,9 +6,9 @@ const HomePageProfs = ({SampleProfile}) => {
         return (
           <div>
             {SampleProfile.map((profile, index) => (
-              <div className="HomePage-Profile" key={index}>
+              <div key={index}>
                 <Link to={`/profprofiles/${profile.id}`}>
-                  <div>
+                  <div className="HomePage-Profile">
                     <img
                       src={profile.profilePic}
                       alt="Sample Profile Pic"
