@@ -3,6 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { FiChevronLeft } from "react-icons/fi";
 
 const SpeachTemplets = () => {
+  const [area, setArea] = useState(null);
+
+  const handleChange = (e) => {
+    setArea({ ...area, [e.target.id]: e.target.value });
+    console.warn(e.target.value);
+  };
+
+  const handleSubmit = () => {};
   return (
     <div>
     
@@ -10,9 +18,32 @@ const SpeachTemplets = () => {
         <FiChevronLeft />
       </Link>
       <h3>Speach Templets</h3>
-      <p>
-        This page should have templates for what the professional will discuss
-      </p>
+      <div>
+      
+      <div>
+      <h3>What occupation are you currently in?</h3>
+        <form onSubmit={handleSubmit}>
+          <input
+            id="Occupation"
+            type="text"
+            placeholder="Occupation"
+            onChange={handleChange}
+          />
+          <button onClick={handleSubmit}>Input Occupation</button>
+        </form>
+        <h3>How did you get into this field?</h3>
+        <form onSubmit={handleSubmit}>
+          <input
+            id="Field"
+            type="text"
+            placeholder="Field"
+            onChange={handleChange}
+          />
+          <button onClick={handleSubmit}>Input field information</button>
+        </form>
+        
+      </div>
+    </div>
     </div>
   );
 };

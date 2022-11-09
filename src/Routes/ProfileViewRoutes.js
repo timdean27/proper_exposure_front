@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import AllProfProfiles from "../pages/ViewProfiles/AllProfProfiles";
 import IndividualProfile from "../pages/ViewProfiles/IndividualProfile";
 const ProfileViewRoutes = () => {
-
     const SampleProfile = [
         {
           id:1,
@@ -28,9 +27,6 @@ const ProfileViewRoutes = () => {
           SchoolsNear: ["Northport HS", "Commack HS"],
         },
       ];
-
-
-
 
   return (
     <div>
