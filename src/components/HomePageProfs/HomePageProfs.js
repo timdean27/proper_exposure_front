@@ -2,11 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const HomePageProfs = ({SampleProfile}) => {
+    
+    
+    
+    
     const loadedData = () => {
         return (
           <div>
             {SampleProfile.map((profile, index) => (
-              <div key={index}>
+              <div className="HomePageProfs-container" key={index}>
                 <Link to={`/profprofiles/${profile.id}`}>
                   <div className="HomePage-Profile">
                     <img

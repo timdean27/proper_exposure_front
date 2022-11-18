@@ -80,9 +80,14 @@
     word-wrap: break-word;
     border: 1px solid #39863d;
     background-color: #ffffff;
-    margin: 2px;
     text-align: center;
     text-decoration: none;
+    align-items: center;
+    margin: auto;
+    padding: 2vw;
+}
+.HomePageProfs-container{
+    padding: .5vh
 }
 
 /* ///////////////////////////////////// */
