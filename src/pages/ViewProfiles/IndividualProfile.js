@@ -50,7 +50,7 @@ const IndividualProfile = ({ SampleProfile }) => {
 
   return (
     <div>
-      <h1>What What</h1>
+      <h1>IndividualProfile page</h1>
       <div>{showProfile ? loadedMarketing() : loadingMarketing()}</div>
     </div>
   );
