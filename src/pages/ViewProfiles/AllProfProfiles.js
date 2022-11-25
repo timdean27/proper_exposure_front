@@ -10,13 +10,13 @@ import { FiChevronLeft } from "react-icons/fi";
 
 
 const AllProfProfiles = ({SampleProfile}) => {
- 
+  let navigate = useNavigate();
 
   return (
     <div>
-      <Link className="back-btn" to="/">
-        <FiChevronLeft />
-      </Link>
+        <>
+          <div onClick={() => navigate(-1)}><FiChevronLeft /></div> 
+        </>
       <h3>Profiles</h3>
       <p>
         This page should have the profiels and credentials of the proffesionals

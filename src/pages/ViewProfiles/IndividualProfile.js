@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { FiChevronLeft } from "react-icons/fi";
 
 const IndividualProfile = ({ SampleProfile }) => {
+  let navigate = useNavigate();
+
   console.log(SampleProfile[0].id);
   const { id } = useParams();
   console.log(id);
@@ -15,9 +17,9 @@ const IndividualProfile = ({ SampleProfile }) => {
   const loadedMarketing = () => {
     return (
       <div key={showProfile.id}>
-        <Link className="back-btn" to="/profprofiles">
-          <FiChevronLeft />
-        </Link>
+        <>
+          <div onClick={() => navigate(-1)}><FiChevronLeft /></div> 
+        </>
 
         <div className="Single-Profile-Header">
           <img
