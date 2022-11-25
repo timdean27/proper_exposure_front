@@ -6,12 +6,15 @@ import { FiChevronLeft } from "react-icons/fi";
 import LoginComp from "../../components/LoginComp/LoginComp";
 
 const Login = () => {
+  let navigate = useNavigate();
   return (
     <div>
-      <Link className="back-btn" to="/">
-        <FiChevronLeft />
-      </Link>
-      <LoginComp/>
+      <>
+        <div onClick={() => navigate(-1)}>
+          <FiChevronLeft />
+        </div>
+      </>
+      <LoginComp />
     </div>
   );
 };

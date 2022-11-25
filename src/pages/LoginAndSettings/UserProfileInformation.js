@@ -7,11 +7,16 @@ import LocationInformation from "../../components/ProfileInformation/LocationInf
 import About from "../../components/ProfileInformation/About"
 
 const UserProfileInformation = () => {
+  let navigate = useNavigate();
   return (
     <div>
-    <Link className="back-btn" to="/">
-        <FiChevronLeft />
-      </Link>
+    
+      <>
+        <div onClick={() => navigate(-1)}>
+          <FiChevronLeft />
+        </div>
+      </>
+      <h1>UserProfileInformation page</h1>
     <LocationInformation/>
     <About/>
     </div>
